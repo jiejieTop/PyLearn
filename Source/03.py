@@ -5,6 +5,3 @@ lst.clear()
 print(lst)
 
 
-a = [1]
-b = [2]
-
