@@ -6,8 +6,5 @@ if[usermane,passward] in database:
 else:
     print('Not Ok!')
 
-def jiejie():
-    a = 1
-    print(a)
 
-jiejie()
+

@@ -19,9 +19,12 @@ request = input('phone number (p) or address (a) ?')
 
 if request == 'p':
     key = 'phone'
-else:
+if request == 'a':
     key = 'addres'
+else:
+    print('err')
 
 if name in people:
     print("{}'s {} is {}.".format(name,labels[key],people[name][key]))
-
+else:
+    print('not find the people!')
