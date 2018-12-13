@@ -9,15 +9,18 @@ class Cat :
     def drink(self):
         print("%s要喝水"%self.name)
 
+    def __del__(self):
+        print("%s 走了"%self.name)
 
 tom = Cat('Tom')
-
+tom1 = Cat('Tom1')
 
 tom.eat()
 tom.drink()
 
-tom1 = Cat('Tom1')
+del tom
 
+print('-'*50)
 
 tom1.eat()
 tom1.drink()

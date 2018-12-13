@@ -14,6 +14,10 @@ labels = {
     'addr' : 'address'
 }
 
+print(people.get('nan'))
+
+print(people.items())
+
 name = input('name : ')
 request = input('phone number (p) or address (a) ?')
 
@@ -28,3 +32,6 @@ if name in people:
     print("{}'s {} is {}.".format(name,labels[key],people[name][key]))
 else:
     print('not find the people!')
+
+
+
