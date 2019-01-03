@@ -1,5 +1,4 @@
 class Game(object):
-
     #定义历史最高分
     top_score = 0
 
@@ -20,12 +19,16 @@ class Game(object):
     def start_game(self):
         print("%s 开始游戏啦" % self.player_name)
 
+def main():
+    print("测试")
+    print("-"*50)
 
-Game.show_help()
+    Game.show_help()
+    Game.show_top_score()
 
-Game.show_top_score()
+    xiaoming = Game("xiaoming")
 
+    xiaoming.start_game()
 
-xiaoming = Game("小明")
-
-xiaoming.start_game()
+if __name__ == "__main__":
+    main()
